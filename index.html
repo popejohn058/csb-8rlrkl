@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Making links</title>
+  </head>
+  <body>
+    <h1>Making links</h1>
+
+    <!--Go back and actually link things for practice-->
+    <p>All types of links use an anchor or <code>a</code></p>
+    <h2>Types of Links</h2>
+    <ul>
+      <li>href: can use absolute or relative links</li>
+      <li>hreflang: specifies language of resource linked resource</li>
+      <li>rel: specifies relationship between current and linked document</li>
+      <li>
+        target: specifies where to open, ex.
+        <code>_blank, _self, _parent, _top</code>
+      </li>
+      <li>title: specifies extra information about a link</li>
+      <li>download: specifies that the target will be downloaded</li>
+    </ul>
+    <h2>Ways to Link</h2>
+    <p>
+      You can use absolute URLs always, and can also use <code>rel</code> to
+      show what kind of link it is, like this:
+    </p>
+    <pre><a href="http://example.com/" rel="external">example site</a></pre>
+    <p>
+      You can jump between sections of a page by using <code>id</code> tags like
+      this:
+    </p>
+    <pre><h1>Table of Contents</h1>
+          <a href='#Topic1'>Click to jump to the First Topic</a>
+          <a href='#Topic2'>Click to jump to the Second Topic</a></pre>
+    <p>You can do this across the same website like this:</p>
+    <pre>Remember, you can always <a href="page1.html#Topic1">look back in the First Topic</a> for
+              supporting information.</pre>
+      <p>To link to a page on the same site, you can simply use the backslash <code>/</code> to link it:
+            <pre><a href="/page">Text Here</a>
+            <a href="http://example.com/page">Text Here</a></pre></p>
+
+      <p>Making a link with <code>tel:</code> dials a number like Skype or Facetime: 
+            <pre><a href="tel:01234567890">Call us</a></pre></p>
+
+        <p>Open a link in a new tab like this:
+            <pre><a href="example.com" target="_blank">Text Here</a></pre></p>
+<p>To open an email client, use <code>mailto:</code>
+  <p>To use CC or BCC, use the following syntax:<p>
+    <pre><a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com">Send email</a></pre>
+    <p>You can populate the subject and body as well:</p>
+    <pre><a href="mailto:example@example.com?subject=Example+subject&body=Message+text">Send email</a></pre>
+
+  </body>
+</html>
